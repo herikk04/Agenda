@@ -33,5 +33,4 @@ Contribuições
 Contribuições são bem-vindas! Para contribuir, por favor abra um pull request com suas sugestões de melhorias ou correções.
 
 
-Este README fornece uma visão geral do projeto, incluindo como executá-lo, suas funcionalidades, e informações sobre contribuições. &#8203;``【oaicite:0】``&#8203;
-
+Este README fornece uma visão geral do projeto, incluindo como executá-lo, suas funcionalidades, e informações sobre contribuições.
