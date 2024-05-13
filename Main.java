@@ -1,5 +1,3 @@
-package Agenda;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -22,51 +20,51 @@ public class Main {
 
 		agenda.inicializandoContatos();
 		
-		JOptionPane.showMessageDialog(null, "Olá, seja bem vindo a Agenda Eletrônica! ", "Saudações", 1);
+		JOptionPane.showMessageDialog(null, "Olï¿½, seja bem vindo a Agenda Eletrï¿½nica! ", "Saudaï¿½ï¿½es", 1);
 		
-		//Laço para realizar ações até o momento da sua finalização
+		//Laï¿½o para realizar aï¿½ï¿½es atï¿½ o momento da sua finalizaï¿½ï¿½o
 		do {
-			acaoEscolhida = JOptionPane.showInputDialog(null, "Informe qual ação deseja realizar no sistema: \n\n 1- Adicionar contato \n 2- Consultar contato \n 3- Remover contato \n 4- Visualizar Agenda ", "Escolha da Ação", 1);
+			acaoEscolhida = JOptionPane.showInputDialog(null, "Informe qual aï¿½ï¿½o deseja realizar no sistema: \n\n 1- Adicionar contato \n 2- Consultar contato \n 3- Remover contato \n 4- Visualizar Agenda ", "Escolha da Aï¿½ï¿½o", 1);
 			
-			//Switch escolher a ação do usuário
+			//Switch escolher a aï¿½ï¿½o do usuï¿½rio
 			switch (acaoEscolhida) {
 			case "1":
-				//Laço para adiconar até o usuário não quiser adicionar mais ninguém na agenda
+				//Laï¿½o para adiconar atï¿½ o usuï¿½rio nï¿½o quiser adicionar mais ninguï¿½m na agenda
 				do {
-					nome = JOptionPane.showInputDialog(null,"Informe o nome da pessoa: ","Inserção de dados",1);
+					nome = JOptionPane.showInputDialog(null,"Informe o nome da pessoa: ","Inserï¿½ï¿½o de dados",1);
 					nome = nome.toUpperCase();
-					telefone = JOptionPane.showInputDialog(null,"Informe o telefone da pessoa: ","Inserção de dados",1); 
+					telefone = JOptionPane.showInputDialog(null,"Informe o telefone da pessoa: ","Inserï¿½ï¿½o de dados",1); 
 					
 					pessoa = new Pessoa(nome, telefone);
 					
 					agenda.adicionarContato(pessoa);
-					continuaAcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Gostaria de adicionar outra pessoa? \n1- Sim \n2- Não","Confirmação",1));
+					continuaAcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Gostaria de adicionar outra pessoa? \n1- Sim \n2- Nï¿½o","Confirmaï¿½ï¿½o",1));
 					
 				}while(continuaAcao == 1);
 				
 			break;
 			
 			case "2":
-				//Laço para consultar até o usuário não quiser consultar mais ninguém na agenda
+				//Laï¿½o para consultar atï¿½ o usuï¿½rio nï¿½o quiser consultar mais ninguï¿½m na agenda
 				do {
-					nome = JOptionPane.showInputDialog(null,"Informe o nome da pessoa: ","Inserção de dados",1);
+					nome = JOptionPane.showInputDialog(null,"Informe o nome da pessoa: ","Inserï¿½ï¿½o de dados",1);
 					nome = nome.toUpperCase();
 					
 					agenda.consultarContato(nome);
-					continuaAcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Gostaria de consultar outra pessoa? \n1- Sim \n2- Não","Confirmação",1));
+					continuaAcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Gostaria de consultar outra pessoa? \n1- Sim \n2- Nï¿½o","Confirmaï¿½ï¿½o",1));
 					
 				}while(continuaAcao == 1);
 				
 			break;
 			
 			case "3":
-				//Laço para remover até o usuário não quiser remover mais ninguém na agenda
+				//Laï¿½o para remover atï¿½ o usuï¿½rio nï¿½o quiser remover mais ninguï¿½m na agenda
 				do {
-					nome = JOptionPane.showInputDialog(null,"Informe o nome completo da pessoa: ","Inserção de dados",1);
+					nome = JOptionPane.showInputDialog(null,"Informe o nome completo da pessoa: ","Inserï¿½ï¿½o de dados",1);
 					nome = nome.toUpperCase();
 
 					agenda.removerContato(nome);
-					continuaAcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Gostaria de remover outra pessoa? \n1- Sim \n2- Não","Confirmação",1));
+					continuaAcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Gostaria de remover outra pessoa? \n1- Sim \n2- Nï¿½o","Confirmaï¿½ï¿½o",1));
 					
 				} while (continuaAcao == 1);
 				
@@ -79,8 +77,8 @@ public class Main {
 			break;	
 			}
 			
-			//Pergunta ao usuário se ele quer realizar mais alguma ação, assim o laço ocorrerá novamente ou não
-			continuaAcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Gostaria de realizar mais alguma ação? \n1- Sim \n2- Não","Confirmação",1));
+			//Pergunta ao usuï¿½rio se ele quer realizar mais alguma aï¿½ï¿½o, assim o laï¿½o ocorrerï¿½ novamente ou nï¿½o
+			continuaAcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Gostaria de realizar mais alguma aï¿½ï¿½o? \n1- Sim \n2- Nï¿½o","Confirmaï¿½ï¿½o",1));
 			
 		} while (continuaAcao == 1);
 	}

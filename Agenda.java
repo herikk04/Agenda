@@ -1,4 +1,3 @@
-package Agenda;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,7 +13,7 @@ public class Agenda {
 			"T", "U", "V", "W", "Y", "Z" };
 
 	/**
-	 * Construtor Específico
+	 * Construtor Especï¿½fico
 	 */
 	public Agenda() {
 		this.pessoas = new ArrayList<Pessoa>();
@@ -23,7 +22,7 @@ public class Agenda {
 	
 
 	/**
-	 * Método para inicializar os contatos na Agenda
+	 * Mï¿½todo para inicializar os contatos na Agenda
 	 */
 	public void inicializandoContatos() {
 		for (String chave : chaves) {
@@ -33,7 +32,7 @@ public class Agenda {
 	}
 
 	/**
-	 * Método para adicionar pessoas na Agenda
+	 * Mï¿½todo para adicionar pessoas na Agenda
 	 * @param pessoa
 	 */
 	public void adicionarContato(Pessoa pessoa) {
@@ -49,13 +48,13 @@ public class Agenda {
 			contatos.put(chave, pessoas);
 			JOptionPane.showMessageDialog(null, "Os dados fornecidos foram adicionados na agenda","Contato Adicionado",1);
 		} else {
-			System.out.println("Chave não existe!");
+			System.out.println("Chave nï¿½o existe!");
 		}
 
 	}
 	
 	/**
-	 * Método para consular pessoas na Agenda
+	 * Mï¿½todo para consular pessoas na Agenda
 	 * @param nome
 	 */
 	public void consultarContato(String nome) {
@@ -73,13 +72,13 @@ public class Agenda {
 				JOptionPane.showMessageDialog(null, "Contato(s) encontrado(s) na Agenda: \n\n" +procuraContato, "Resultado", 1);
 				
 			} else {
-				JOptionPane.showMessageDialog(null, "Contato não encontrado na agenda","Resultado",0);
+				JOptionPane.showMessageDialog(null, "Contato nï¿½o encontrado na agenda","Resultado",0);
 			}
 		}
 	}
 	
 	/**
-	 * Método para remover as pessoas na Agenda
+	 * Mï¿½todo para remover as pessoas na Agenda
 	 * @param nome
 	 */
 	public void removerContato(String nome) {
@@ -106,15 +105,15 @@ public class Agenda {
 	
 	
 	/**
-	 * Método para retornar a lista atualizada dos contatos na Agenda
+	 * Mï¿½todo para retornar a lista atualizada dos contatos na Agenda
 	 * @return
 	 */
 	public String retornaListaAgenda() {
-		return " Contatos integrado na Agenda Eletrônica\n\n" + contatos;
+		return " Contatos integrado na Agenda Eletrï¿½nica\n\n" + contatos;
 	}
 
 	/**
-	 * Método para retornar o nome da pessoa
+	 * Mï¿½todo para retornar o nome da pessoa
 	 * @return
 	 */
 	public String getNome() {
@@ -122,7 +121,7 @@ public class Agenda {
 	}
 
 	/**
-	 * Método para setar o nome da pessoa
+	 * Mï¿½todo para setar o nome da pessoa
 	 * @param nome
 	 */
 	public void setNome(String nome) {
@@ -130,7 +129,7 @@ public class Agenda {
 	}
 
 	/**
-	 * Método para retornar as pessoas do ArrayList
+	 * Mï¿½todo para retornar as pessoas do ArrayList
 	 * @return
 	 */
 	public ArrayList<Pessoa> getPessoas() {
@@ -138,7 +137,7 @@ public class Agenda {
 	}
 
 	/**
-	 * Método para setar as pessoas do Arraylist 
+	 * Mï¿½todo para setar as pessoas do Arraylist 
 	 * @param pessoas
 	 */
 	public void setPessoas(ArrayList<Pessoa> pessoas) {
@@ -146,7 +145,7 @@ public class Agenda {
 	}
 
 	/**
-	 * Método para retonar os contatos
+	 * Mï¿½todo para retonar os contatos
 	 * @return
 	 */
 	public HashMap<String, ArrayList<Pessoa>> getContatos() {
@@ -154,7 +153,7 @@ public class Agenda {
 	}
 
 	/**
-	 * Método para setar os contatos
+	 * Mï¿½todo para setar os contatos
 	 * @param contatos
 	 */
 	public void setContatos(HashMap<String, ArrayList<Pessoa>> contatos) {

@@ -1,5 +1,3 @@
-package Agenda;
-
 public class Pessoa {
 	
 	String nome;
@@ -12,7 +10,7 @@ public class Pessoa {
 	}
 
 	/**
-	 * Construtor Específico
+	 * Construtor Especï¿½fico
 	 * @param nome
 	 * @param telefone
 	 */
