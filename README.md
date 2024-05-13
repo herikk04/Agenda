@@ -32,8 +32,6 @@ Este projeto foi desenvolvido como uma atividade introdutória para entender os 
 Contribuições
 Contribuições são bem-vindas! Para contribuir, por favor abra um pull request com suas sugestões de melhorias ou correções.
 
-Licença
-Distribuído sob a licença MIT. Veja LICENSE para mais informações.
 
-Contato
-Para mais informações, entre em contato através do email fornecido pelo IFG Campus Inhumas.
+Este README fornece uma visão geral do projeto, incluindo como executá-lo, suas funcionalidades, e informações sobre contribuições e licença. &#8203;``【oaicite:0】``&#8203;
+
